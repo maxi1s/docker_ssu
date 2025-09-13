@@ -1,7 +1,7 @@
 Минимальный проект
 Приложение на Go делает:
 - `GET /healthz` → `ok`
-- `GET /` → текст "Hello from Docker + Compose! ✅"
+- `GET /` → текст "Hello from Docker + Compose!"
 
 ## Запуск
 
@@ -9,7 +9,7 @@
 cp .env.example .env
 docker compose up --build
 # открой http://localhost:8080/healthz  → ok
-# открой http://localhost:8080/         → Hello from Docker + Compose! ✅
+# открой http://localhost:8080/         → Hello from Docker + Compose!
 ```
 
 - `docker-compose.yml` маппит порт хоста `${APP_PORT}` на порт контейнера `8080`.
