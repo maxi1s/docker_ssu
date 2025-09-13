@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    image: ssu-schedule:0.1
+    container_name: ssu-schedule-app
+    env_file: .env
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
